@@ -1,8 +1,8 @@
 {
-  "name": "kanban-app",
+  "name": "slip",
   "version": "0.1.0",
-  "description": "Pro React sample kanban app project",
-  "author": "Cássio Zen",
+  "description": "Slip Test",
+  "author": "Puppetplay",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --progress",
