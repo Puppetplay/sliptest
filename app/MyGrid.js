@@ -13,6 +13,14 @@ class MyGrid extends Component {
         this.createGrid('firstGrid');
     }
 
+    testLog() {
+        console.log('testLog');
+    }
+
+    bindData(data) {
+        this.dataProvider.fillJsonData(data.data.data, { fillMode: "append" });
+    }
+
     // 그리드 생성 초기에 한번만 호출
     createGrid(gridName) {
 
@@ -99,6 +107,10 @@ class MyGrid extends Component {
             }
         ];
         this.gridView.setColumns(columns);
+
+    }
+
+    setData() {
 
     }
 
