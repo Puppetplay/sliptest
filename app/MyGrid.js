@@ -18,7 +18,7 @@ class MyGrid extends Component {
     }
 
     bindData(data) {
-        this.dataProvider.fillJsonData(data.data.data, { fillMode: "append" });
+        this.dataProvider.fillJsonData(data.data.data, { fillMode: "set" });
     }
 
     // 그리드 생성 초기에 한번만 호출
@@ -29,6 +29,7 @@ class MyGrid extends Component {
         this.dataProvider = new RealGridJS.LocalDataProvider();
         this.gridView = new RealGridJS.GridView(gridName);
         this.gridView.setDataSource(this.dataProvider);
+
 
         // Create Field
         //두 개의 필드를 가진 배열 객체를 생성합니다.
@@ -71,11 +72,11 @@ class MyGrid extends Component {
             },
             {
                 name: "qt_qty", fieldName: "qt_qty",
-                header: { text: "단가"}, width: 100
+                header: { text: "수량"}, width: 100
             },
             {
-                name: "unit", fieldName: "utit",
-                header: { text: "수량"}, width: 100
+                name: "unit", fieldName: "unit",
+                header: { text: "단가"}, width: 100
             },
             {
                 name: "mn_mnam", fieldName: "mn_mnam",
