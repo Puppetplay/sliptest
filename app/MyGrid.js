@@ -13,10 +13,6 @@ class MyGrid extends Component {
         this.createGrid('firstGrid');
     }
 
-    testLog() {
-        console.log('testLog');
-    }
-
     bindData(data) {
         this.dataProvider.fillJsonData(data.data.data, { fillMode: "set" });
     }
