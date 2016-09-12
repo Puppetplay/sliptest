@@ -1,1 +1,1 @@
-import React from 'react';import {render} from 'react-dom';import Main from './Main';render(<Main />, document.getElementById('root'));
+import React from 'react';import {render} from 'react-dom';import Main from './components/Main';render(<Main/>, document.getElementById('root'));
