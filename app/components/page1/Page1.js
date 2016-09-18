@@ -12,6 +12,7 @@ class Page1 extends Component {
         this.gridSetting1 = GridInfo.getGridInfo('mainGrid');
     }
 
+    // 컴포넌트가 렌더링 된 후 호출 된다
     componentDidMount(){
         this.grid1 = this.refs["grid1"];
         this.gridView1 = this.grid1.getGridView();
@@ -38,7 +39,6 @@ class Page1 extends Component {
         let promise = APIs.selectSlip('/20130101~20160101')
             promise.then((responseData) => {
                 this.grid1.bindData(responseData);
-                this.refs["grid2"].bindData(responseData);
         })
     }
 }

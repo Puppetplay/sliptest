@@ -4,7 +4,7 @@ let GridInfo = {
             case "mainGrid":
                 let setInfo;
                 setInfo = {
-                    // 드드리
+                    // 그리드 컬럼설정
                     name: gridName,
 
                     fields: [
