@@ -1,7 +1,7 @@
 let GridInfo = {
     getGridInfo(gridName) {
         switch (gridName) {
-            case "mainGrid":
+            case "gridTop":
                 let setInfo;
                 setInfo = {
                     // 그리드 컬럼설정
@@ -86,5 +86,6 @@ let GridInfo = {
         }
     }
 }
+
 
 export default GridInfo;

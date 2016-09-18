@@ -11,15 +11,7 @@ class SOGrid extends Component {
     componentDidMount() {
         console.log('SOGridDidMount');
         this.createGrid(this.props.gridSetting.name);
-        this.gridView.onCurrentRowChanged =  this.onCurrentRowChanged;
     }
-
-    onCurrentRowChanged(grid, oldRow, newRow) {
-        console.log('test1');
-        console.log(grid)
-    }
-
-
 
     bindData(data) {
         this.dataProvider.fillJsonData(data.data.data, { fillMode: "set" });
